@@ -1,0 +1,176 @@
+{
+    "Nike": {
+        "runshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 1,
+                "40size": 4,
+                "42size": 15
+            },
+            "price": 800,
+            "count": 0.9,
+            "Inprice": "price * count - 100",
+            "Outlowprice": "price * count - 50"
+        },
+        "footbshoes": {
+            "num": {
+                "s30": 10,
+                "31": 12,
+                "35": 15,
+                "38": 11,
+                "40size": 41,
+                "42size": 15
+            },
+            "price": 700,
+            "count": 0.95,
+            "Inprice": "price*count - 200",
+            "Outlowprice": "price*count - 150"
+        },
+        "basketbshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 15,
+                "40size": 42,
+                "42size": 15
+            },
+            "price": 500,
+            "count": 0.8,
+            "Inprice": "price*count - 120",
+            "Outlowprice": "price*count - 70"
+        },
+        "restshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 16,
+                "40size": 44,
+                "42size": 15
+            },
+            "price": 300,
+            "count": 0.96,
+            "Inprice": "price*count - 50",
+            "Outlowprice": "price*count - 20"
+        }
+    },
+    "Adidas": {
+        "runshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 12,
+                "40size": 41,
+                "42size": 15
+            },
+            "price": 850,
+            "count": 0.91,
+            "Inprice": "price*count - 200",
+            "Outlowprice": "price*count - 150"
+        },
+        "footbshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 14,
+                "40size": 45,
+                "42size": 15
+            },
+            "price": 650,
+            "count": 0.93,
+            "Inprice":"price*count - 120",
+            "Outlowprice":"price*count - 70"
+        },
+        "basketbshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 14,
+                "40size": 42,
+                "42size": 15
+            },
+            "price": 900,
+            "count": 0.83,
+            "Inprice":"price*count - 120",
+            "Outlowprice":"price*count - 80"
+        },
+        "climbshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 16,
+                "40size": 43,
+                "42size": 15
+            },
+            "price": 500,
+            "count": 0.97,
+            "Inprice":"price*count - 100",
+            "Outlowprice":"price*count - 50"
+        }
+    },
+    "PIKE": {
+        "runshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 12,
+                "40size": 47,
+                "42size": 15
+            },
+            "price": 600,
+            "count": 0.91,
+            "Inprice":"price - 300",
+            "Outlowprice":"price*count - 50"
+        },
+        "footbshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 19,
+                "40size": 47,
+                "42size": 15
+            },
+            "price": 500,
+            "count": 0.92,
+            "Inprice":"（price - 200）*count",
+            "Outlowprice":"(price - 20)*count"
+        },
+        "basketbshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 13,
+                "40size": 46,
+                "42size": 15
+            },
+            "price": 400,
+            "count": 0.93,
+            "Inprice":"price*count - 100",
+            "Outlowprice":"（price - 40）*count"
+        },
+        "tuoshoes": {
+            "num": {
+                "30size": 10,
+                "31size": 12,
+                "35size": 15,
+                "38size": 15,
+                "40size": 46,
+                "42size": 15
+            },
+            "price": 300,
+            "count": 0.94,
+            "Inprice":"（price - 100）*count",
+            "Outlowprice":"price*count - 50"
+        }
+    }
+}

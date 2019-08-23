@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hot。Game</title>
+  <script>
+     [(ngModel)] = "myOption";
+    function MyMain(){
+     
+     
+    
+    }
+
+    //品牌的跳转
+    function SelMak() {
+      document.getElementById("ifna").src = "http://localhost/tes.html";
+     document.getElementById("run").innerHTML = window.append(document.getElementById("ifna").src);
+    
+      console.log("dfgh");
+    }
+    //价格的跳转
+    function SelPri(){
+      document.getElementById("ifna").src = "http://localhost/inn.html";
+          document.getElementById("run").innerHTML = window.append(document.getElementById("ifna").src);
+         
+      console.log("price");
+    }
+   
+  </script>
+  <style>
+    input {
+      width: 300px;
+      height: 25px;
+    }
+    li{
+      list-style: none;
+    }
+    ul{
+      text-align: center
+    }
+    iframe{
+     border-style: none;
+    }
+  </style>
+
+</head>
+
+<body style="background-image: url('bg.jpg')" onload="MyMain()">
+  <div style=" background-color: darkolivegreen;text-align: center;height: 120px;width: 100%;position: fixed;top: 0px">
+    <h1 style=" color: blanchedalmond;">鞋店信息管理系统</h1>
+    <input type="text" name="identifier" placeholder="输入你要搜索的鞋子编号">
+    &nbsp;
+    <button onclick="Sou()">搜索</button>
+    &nbsp; &nbsp; &nbsp;
+    <input type="text" name="identifier" placeholder="输入你要搜索的鞋子款式">
+    &nbsp;
+    <button>搜索</button>
+    &nbsp; &nbsp; &nbsp;
+    <input type="text" name="identifier" placeholder="输入你要搜索的鞋子品牌">
+    &nbsp;
+    <button>搜索</button>
+  </div>
+  <div style="  background-color:#758854;width: 20%;height: 85%;text-align: center;position: fixed;top: 140px;">
+    <ul style="position: fixed">
+      <li style=" color: blanchedalmond; list-style: none;">
+        <select onchange="SelMak()" id="Sele"
+          style="width: 320px;height: 50px;font-size:25px;background-color: rosybrown;border: none;">
+          <option style="font-size: 20px;width: 320px;height: 50px;" id="sel" value="selt"> --------请选择品牌--------
+          </option>
+          <option style="font-size: 20px;width: 320px;height: 50px;" *ngFor="let item of [(ngModel)]=myOption"
+            value="{{item.id}}">{{item.name}}</option>
+        </select>
+        <hr>
+      </li>
+      <li style=" color: blanchedalmond; list-style: none;">
+        <select onchange="SelPri()"
+          style="width: 320px;height: 50px;font-size:25px;background-color: rosybrown;border: none;">
+          <option style="font-size: 20px;width: 320px;height: 50px;" id="sel" value="selt"> -----请选择查询品牌价格-----</option>
+          <option style="font-size: 20px;width: 320px;height: 50px;"  *ngFor="let item of  [(ngModel)]=Option"
+            value="{{item.id}}">{{item.name}}</option>
+        </select>
+      </li>
+      <hr>
+    </ul>
+  </div>
+  <div id="run"
+  style=" background-color:#758854; width: 76.5%;height: 85%;text-align: center;position: fixed;top: 140px;left: 22%;">
+  <iframe id="ifna" style="margin-top: 45px;width: 60%;height: 70%"></iframe>
+</div>
+</body>
+</html>

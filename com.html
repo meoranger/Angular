@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>小鞋店</title>
+</head>
+
+<body >
+  <!-- 导航栏 -->
+  <div style=" background-color: black;text-align: center;height: 120px;width: 100%;position: fixed;top: 0px;">
+    <h1 style=" color: blanchedalmond;">鞋店信息管理系统</h1>
+    <!-- 下拉框动态调用后台数据 -->
+    <select id="Sele"
+      style="width: 25%;margin-top:0.9%;text-align: center;height: 30px; font-size: 20px;border-bottom: 0px;border-left: 0px;border-right: 0px">
+      <option style="font-size: 20px" id="sel" value="selt">
+        ---------------------------请选择品牌--------------------------</option>
+      <option style="font-size: 20px" *ngFor="let item of Option" value="{{item.id}}">{{item.name}}</option>
+    </select>
+    &nbsp;
+    <!-- 添加数据按钮 -->
+    <button style="width: 120px ;background: rgb(255, 235, 205);font-size: 15px ;border:none;border-radius: 15px"
+      onclick="Instead()">添加数据</button>
+  </div>
+  <!-- 循环显示数据 -->
+
+  <ul>
+      <li *ngFor="let item of myShoes" style="list-style: none">
+        <div id="t1" style="margin-top: 9% ;width: 75%;height: 1000px; margin-left: 12%;background-color:darkolivegreen;text-align: center;color: rgb(241, 237, 237);">
+          <br><br>
+          {{item.shoestype}}
+          <input type="text" id="shoestype" value="dd">
+          <br>
+          {{item.shoesNum}}
+          <input type="text" id="shoestype" value="dd">
+          <br>
+          {{item.size1}}<input type="text" id="size30" value="ff">
+          <br>
+          {{item.size2}}<input type="text" id="size30" value="dd">
+          <br>
+          {{item.size3}}<input type="text" id="size30" value="ff">
+          <br>
+          {{item.size4}} <input type="text" id="size30" value="df">
+          <br>
+          {{item.size5}}<input type="text" id="size30" value="df">
+          <br>
+          {{item.size6}}<input type="text" id="size30" value="df">
+          <br>
+          {{item.shoesprice}}<input type="text" id="price" value="">
+          <br>
+          {{item.shoesdiscount}}<input type="text" id="discount" value="df">
+          <br><br>
+         
+             <button
+            style="width: 120px ;background: chocolate;font-size: 15px ;border:none;border-radius: 15px;margin-left: 25%"
+            onclick="Updated()">修改</button> 
+        </div>
+        
+         
+      </li>
+  </ul>
+ 
+</body>
+
+
+</html>
+<router-outlet></router-outlet>

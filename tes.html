@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改</title>
+    <script type="text/javascript">
+  
+    </script>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+    
+</head>
+<body>
+        <h3 style="font-size: 25px;color:rosybrown;margin-left: 15%">修改数据</h3>
+        <ul >
+          <li>
+            <a style="font-size: 20px;color: rosybrown"> 输入修改鞋子编号:</a><input type="text" id="ID" value="1">
+          </li><br>
+          <li>
+            <a style="color: rosybrown;font-size: 20px"> 请输入鞋子品牌：</a><input id="make" value="Nike">
+          </li> <br>
+          <li *ngFor="let index of ShoesSize">
+            <a style="font-size: 20px;color: rosybrown">{{index.name}}:</a>
+            <input type="text" id="ID" value="{{index.size}}">
+            <br><br>
+            <a style="font-size: 20px;color: rosybrown">30码：</a>
+            <input type="text" id="ID" value="{{index.size}}">
+            <br><br>
+          </li> 
+          <li>
+            <a style="color: rosybrown;font-size: 20px"> 输入修改鞋子尺码:</a><input type="text" id="ID" value="1">
+          </li> <br>
+          <li>
+            <a style="color: rosybrown;font-size: 20px">请输入鞋子类型：</a><input id="type" value="runshoes">
+          </li><br>
+          <li>
+            <a style="color: rosybrown;font-size: 20px">请输入鞋子价格：</a><input id="price" value="800">
+          </li> 
+          <br>
+          <li>
+            <a style="color: rosybrown;font-size: 20px">请输入鞋子折扣：</a><input id="discount" value="0.9">
+          </li> <br>
+        </ul>
+        <button style="width: 150px ;height: 35px; background: rosybrown;font-size: 15px ;border:none;border-radius: 15px;margin-left: 15%"
+          onclick="Updated()">修改</button>
+</body>
+</html>

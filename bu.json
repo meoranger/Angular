@@ -1,0 +1,29 @@
+{
+    "1": {
+        "id": "1",
+        "work": 500,
+        "jobtype": "Pr",
+        "basejobmoney": 3000,
+        "range": 0.2
+
+    },
+    "2": {
+        "id": "2",
+        "work": 300,
+        "jobtype": "Pl",
+        "basejobmoney": 3000,
+        "range": 15
+
+
+
+    },
+    "3": {
+        "id": "3",
+        "work": 700,
+        "jobtype": "Ar",
+        "basejobmoney": 3000,
+        "range": 20
+
+
+    }
+}

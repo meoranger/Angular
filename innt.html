@@ -1,32 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
 	<meta charset="utf-8" />
 	<title>子页面</title>
 </head>
-<script  type="text/javascript">
-var Onmessage = function(e){
-    console.log("fgdfg");
-    alert("dgsd"+e.data);
-  }
-
-  if( window.addEventListener){
-    window.addEventListener("message",Onmessage,false);
-  }
-  
-  else{
-    if( window.attachEvent  ){
-      window.attachEvent('OnMessage',Onmessage);
-    }
-
-  } 
-
-
-
-
-</script>
 <style>
 	div {
 		width: 300px;
