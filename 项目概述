@@ -1,0 +1,5 @@
+#Angular
+vscode下使用angualr
+SRC / APP所有文件
+服务器：wampserver
+使用php，typescript，iframe标签导入远端服务器上的网页，实现传递数据等功能
