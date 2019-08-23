@@ -6,28 +6,38 @@ import { Loading } from './Makess';
 
 
 
+declare var window: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  inputs:[]
+  styleUrls: ['./app.component.css']
 })
-
-
-
 export class AppComponent {
-  title = 'MyShoes';
-  private make: any = {};
-  private shoesma:any= [];
-  makeshoes = Loading.getLod();
-  myOption:any=[{id:1,name:"李宁"},{id:2,name:"Nike"}];
-  url = 'http://localhost/Mart.html';
+  title = 'programe';
+  public make:any = {};
+  public shoesma:any= [];
+  cronpress:string="";
+  myname:any = 55;
+  st:string = "李宁,Nike,lili";
+  url = 'http://localhost/Mar.html';
   videoUrl:SafeResourceUrl;
-  cron='';
-  cronpress ='';
+
 
   constructor(public sanitizer:DomSanitizer){
     this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+  }
+
+  Se(){
+   this.MyJson();
+    alert("sd"+this.ReturnShoeMak());
+    window.alert("sdfj")
+    document.getElementById("ifcron")['contentWindow'].postMessage(this.st,"*");
+    // window.iframe.ifcron.
+    // var ss = window.parent.origin;
+    //  var s = window.document.getElementById(ss).parentElement;
+    //  console.log(s);
+    // window.document.getElementById("shopr").innerHTML = this.myname;
+     console.log("fdf33");
   }
 
 
